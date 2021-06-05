@@ -32,7 +32,7 @@ with open("/etc/network/interfaces" , "a") as f:
 file = open("/etc/sysctl.conf" , "r")
 lignes = file.readlines()
 file.close()
-lignes[27] = "net.ipv4.ip_forward=1"
+lignes[27] = "net.ipv4.ip_forward=1\n"
 file = open("/etc/sysctl.conf" , "w")
 file.writelines(lignes)
 file.close()
