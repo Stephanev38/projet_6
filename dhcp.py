@@ -45,7 +45,7 @@ os.system('sudo apt-get install isc-dhcp-server')
 file = open("/etc/default/isc-dhcp-server" , "r")
 lignes = file.readlines()
 file.close()
-lignes[16] = 'INTERFACESv4="ens4 ens5"'
+lignes[16] = 'INTERFACESv4="ens4 ens5"\n'
 file = open("/etc/default/isc-dhcp-server" , "w")
 file.writelines(lignes)
 file.close()
