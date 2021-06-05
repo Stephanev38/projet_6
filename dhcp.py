@@ -30,7 +30,7 @@ with open("/etc/network/interfaces" , "a") as f:
 
 ### Configuration du fichier sysctl.conf ###
 file = open("/etc/sysctl.conf" , "r")
-lignes = files.readlines()
+lignes = file.readlines()
 file.close()
 lignes[27] = "net.ipv4.ip_forward=1"
 file = open("/etc/sysctl.conf" , "w")
