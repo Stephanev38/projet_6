@@ -59,7 +59,7 @@ file.writelines(lignes)
 file.close()
 
 ### Configuration du fichier dhcpd.conf ###
-with open("/etc/dhcp/dhcp.conf" , "a") as f:
+with open("/etc/dhcp/dhcpd.conf" , "a") as f:
     f.write("\ndefault-lease-time 600;\n")
     f.write("max-lease-time 7200;\n")
     f.write("option domain-name-servers 192.168.1.1;\n")
