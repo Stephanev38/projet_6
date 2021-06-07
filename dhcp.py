@@ -27,7 +27,7 @@ with open("/etc/network/interfaces" , "a") as f:
     f.write("   address 192.168.3.1\n")
     f.write("   netmask 255.255.255.0\n")
     f.close()
-
+    
 ### Configuration du fichier sysctl.conf ###
 file = open("/etc/sysctl.conf" , "r")
 lignes = file.readlines()
@@ -78,3 +78,11 @@ with open("/etc/dhcp/dhcpd.conf" , "a") as f:
     f.write("   option broadcast-address 192.168.3.255;\n")
     f.write("}\n")
     f.close()
+    
+os.system('sudo ifdown ens3')
+os.system('sudo ifup ens3')
+os.system('sudo ifdown ens4')
+os.system('sudo ifup ens4')
+os.system('sudo ifdown ens5')
+os.system('sudo ifup ens5')
+os.system('sudo service isc-dhcp-server restart')
