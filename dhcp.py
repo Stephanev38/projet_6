@@ -9,7 +9,6 @@ import configparser
 import socket
 
 ### Configuration du fichier interfaces ###
-def interfaces
 with open("/etc/network/interfaces" , "a") as f:
     f.write("\nauto lo\n")
     f.write("iface lo inet loopback\n")
