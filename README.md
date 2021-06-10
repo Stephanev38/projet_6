@@ -1,7 +1,7 @@
 # Projet 6 : Participez à la vie de la communauté Open Source.
 Dans ce projet, je dois créer un script sous Python qui va permettre d'automatiser une tâche de travail d'un Administrateur. J'ai choisi de faire un script pour automatiser la configuration d'un serveur DHCP.
 ## Pré-requis:
-Ce script permet de configurer un serveur DHCP sous LINUX.
+Ce script permet de configurer un serveur DHCP sous LINUX (distribution DEBIAN).
 La distribution de Linux utilisée est Ubuntu 18.04.3 LTS.
 Il n'est pas nécessaire d'installer Python car cette distribution d'Ubuntu contient déjà la version 3 par défaut de ce language.
 Ce script va configurer un serveur DHCP pour 2 réseaux différents, le réseau A et le réseau B.
