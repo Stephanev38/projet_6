@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding:utf8 -*-
 
+### Ce script permet de configurer les différents fichiers d'un serveur DHCP ###
+### Ce serveur fonctionne sous Ubuntu 18.04.3 ###
+
 ### Importation des modules ###
 import os
 import sys
